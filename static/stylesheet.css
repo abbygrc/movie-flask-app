@@ -1,0 +1,36 @@
+/*backup if bulma fails on me*/
+
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,600;0,700;1,400&display=swap");
+* {
+  /* width: 100%; this has been fucking me up this whole time*/
+  font-family: "Cabin", sans-serif;
+}
+
+.logo {
+  width: 256px;
+}
+
+.media-left {
+  width: auto;
+}
+
+.tag {
+  width: 50px;
+}
+
+
+
+
+.checkbox label {
+  display: inline-block;
+
+  padding-right: 10px;
+
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.checkbox input {
+  vertical-align: middle;
+}
+

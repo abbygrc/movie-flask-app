@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!--For mobile responsive design-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/static/stylesheet.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
+    />
+    <title>Movenite</title>
+  </head>
+
+  <body>
+    <div class="container p-6 has-background-black-ter">
+      <!--Movienite Title Hero-->
+      <section class="hero is-danger has-text-centered">
+        <div class="hero-body">
+          <div class="container">
+            <img
+              class="logo"
+              src="/static/assets/movienite2.jpg"
+              alt="Movienite"
+            />
+          </div>
+        </div>
+      </section>
+
+      <div class="block">
+        <!--Search Card-->
+        <div class="column">
+          <div class="box">
+            <!--Header "Search"-->
+            <figure class="image is-32x32">
+              <img src="/static/assets/loupe (1).png" alt="Image" />
+            </figure>
+            <h5 class="title is-5 has-text-centered">Search Movie</h5>
+            <!--End Header "Search"-->
+
+            <!--SearchBar and Filtering-->
+            <div class="block">
+              <form method="POST">
+                <input
+                  class="input"
+                  name="movie"
+                  id="movie"
+                  type="text"
+                  placeholder="Name of Movie or TV Show..."
+                />
+
+                <!--  COLUMNS -->
+                <div class="block">
+                  <label class="checkbox m-4">
+                    <input name="netflix" id="netflix" type="checkbox" />
+                    Netflix
+                  </label>
+
+                  <label class="checkbox m-4">
+                    <input name="hulu" id="hulu" type="checkbox" />
+                    Hulu
+                  </label>
+
+                  <label class="checkbox m-4">
+                    <input name="disney" id="disney" type="checkbox" />
+                    Disney+
+                  </label>
+
+                  <label class="checkbox m-4">
+                    <input name="prime" id="prime" type="checkbox" />
+                    Amazon Prime
+                  </label>
+                </div>
+
+                <input
+                  class="button is-danger is-light mt-3"
+                  type="submit"
+                  value="Search movie"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="columns p-6">
+          <!--Content Card of Movies and Shows-->
+          <div class="column">
+            <div class="box">
+              <h2 class="title is-5">Netflix</h2>
+
+              <!--Search Results show up here-->
+              <div class="tile notification has-background-danger-light">
+                <article class="media">
+                  <div class="media-left">
+
+                    <figure class="image is-128x128">
+                      <img
+                        src="https://bulma.io/images/placeholders/128x128.png"
+                        alt="Image"
+                      />
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <div class="content">
+                      <strong class="title is-4">{{movieTitle}}</strong>
+                      <p class="Overview">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Nostrum corporis deleniti facilis dolorem rerum,
+                        hic soluta. Inventore ipsum laborum magni eveniet facere
+                        neque nisi asperiores veniam dolores quo doloribus,
+                        blanditiis voluptatem ab! Soluta iusto iste voluptatibus
+                        nemo ea recusandae amet?
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+          <!--End Content Card-->
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer has-text-black">
+      <div class="content has-text-centered is-justify-content-flex-end">
+        <p>2020-2020 Movienite | All Rights Reserved</p>
+      </div>
+    </footer>
+  </body>
+
+  <!--Bulma Font // Scripts-->
+  <script
+    defer
+    src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"
+  ></script>
+</html>
